@@ -167,10 +167,6 @@ class Scanner {
         addToken(STRING, value);
     }
 
-    // private void multiLineComment() {
-    //     while (peek() != '*')
-    // }
-
     private boolean match(char expected) {
         if (isAtEnd()) return false;
         if (source.charAt(current) != expected) return false;
