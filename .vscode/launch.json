@@ -1,0 +1,24 @@
+{
+    "type": "java",
+    "name": "Launch Program",
+    "request": "launch",
+    "mainClass": "Main",
+    "args": "arg",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Lox",
+            "request": "launch",
+            "mainClass": "com.craftinginterpreters.lox.Lox",
+            "projectName": "craftinginterpreters_e667fece"
+        },
+        {
+            "type": "java",
+            "name": "GenerateAst",
+            "request": "launch",
+            "mainClass": "com.craftinginterpreters.tool.GenerateAst",
+            "projectName": "craftinginterpreters_e667fece",
+            "args": "${cwd}/src/com/craftinginterpreters/lox/"
+        }
+    ]
+}
