@@ -17,7 +17,8 @@
             "name": "Lox",
             "request": "launch",
             "mainClass": "com.craftinginterpreters.lox.Lox",
-            "projectName": "craftinginterpreters_e667fece"
+            "projectName": "craftinginterpreters_e667fece",
+            "args": "${cwd}/src/com/craftinginterpreters/scripts/script.lox"
         },
         {
             "type": "java",
