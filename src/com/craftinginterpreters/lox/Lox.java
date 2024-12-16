@@ -44,7 +44,7 @@ public class Lox {
             // Quit with ctl+D
             if (line == null) break;
 
-            // Handle expression:
+            // Handle expression.
             if (!line.endsWith(";")) {
                 line = "{var x = " + line + ";\n print x;}";
             }
