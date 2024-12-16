@@ -32,8 +32,14 @@ print y;
 print z;
 */
 
+/*
 var a = 1;
 {
     var a = a + 2;
     print a;
 }
+*/
+
+var a = 3;
+if (a > 2) print "big";
+else print "small";
