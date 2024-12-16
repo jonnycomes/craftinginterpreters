@@ -10,6 +10,7 @@ print a = 5;
 print a + b;
 */
 
+/*
 var x = 1;
 var y = 2;
 var z = 3;
@@ -29,3 +30,10 @@ var z = 3;
 print x;
 print y;
 print z;
+*/
+
+var a = 1;
+{
+    var a = a + 2;
+    print a;
+}
