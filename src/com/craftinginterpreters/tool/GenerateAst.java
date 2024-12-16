@@ -13,19 +13,20 @@ public class GenerateAst {
         }
         String outputDir = args[0];
         
-        defineAst(outputDir, "Expr", Arrays.asList(
+        defineAst(outputDir, "Stmt", Arrays.asList(
                 // baseName: Stmt
-            // "Expression : Expr expression", 
-            //      "Print      : Expr expression",
-            //      "Var        : Token name, Expr initializer"
+            "Block      : List<Stmt> statements",
+                 "Expression : Expr expression", 
+                 "Print      : Expr expression",
+                 "Var        : Token name, Expr initializer"
 
                 // baseName: Expr
-           "Assign   : Token name, Expr value",
-                "Binary   : Expr left, Token operator, Expr right", 
-                "Grouping : Expr expression",
-                "Literal  : Object value",
-                "Unary    : Token operator, Expr right",
-                "Variable : Token name"
+        //    "Assign   : Token name, Expr value",
+        //         "Binary   : Expr left, Token operator, Expr right", 
+        //         "Grouping : Expr expression",
+        //         "Literal  : Object value",
+        //         "Unary    : Token operator, Expr right",
+        //         "Variable : Token name"
         ));
     }
 
@@ -35,8 +36,8 @@ public class GenerateAst {
 
         writer.println("package com.craftinginterpreters.lox;");
         writer.println();
-        // writer.println("import java.util.List;");
-        // writer.println();
+        writer.println("import java.util.List;");
+        writer.println();
         writer.println("abstract class " + baseName + " {");
 
         defineVisitor(writer, baseName, types);
