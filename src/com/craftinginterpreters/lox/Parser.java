@@ -115,7 +115,7 @@ class Parser {
     }
 
     private Expr or() {
-        Expr expr = null;
+        Expr expr = and();
 
         while (match(OR)) {
             Token operator = previous();
@@ -127,7 +127,7 @@ class Parser {
     }
 
     private Expr and() {
-        Expr expr = null;
+        Expr expr = equality();
 
         while (match(AND)) {
             Token operator = previous();
