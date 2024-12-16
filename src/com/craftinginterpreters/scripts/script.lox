@@ -51,7 +51,6 @@ else print "small";
 
 print 5 or nil;
 
-while (a < 5) {
-    print a;
-    a = a + 1;
+for (var k = 0; k < 20; k = k + 1) {
+    print k;
 }
