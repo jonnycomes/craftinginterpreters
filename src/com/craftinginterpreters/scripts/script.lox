@@ -50,3 +50,8 @@ if (a > 2) print "big";
 else print "small";
 
 print 5 or nil;
+
+while (a < 5) {
+    print a;
+    a = a + 1;
+}
