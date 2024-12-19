@@ -41,6 +41,7 @@ var a = 1;
 }
 */
 
+/*
 var a = 3;
 if (a > 2) print "big";
 else print "small";
@@ -54,3 +55,10 @@ print 5 or nil;
 for (var k = 0; k < 20; k = k + 1) {
     print k;
 }
+*/
+
+fun greet(first, last) {
+    print "Hello " + first + " " + last + "!";
+}
+
+greet("Jonny", "Comes");
