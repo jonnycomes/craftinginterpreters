@@ -87,9 +87,20 @@ print count();
 print count();
 */
 
-class Tea {
+class Drink {
+    spill() {
+        print "splash!";
+    }
+}
+
+class Tea < Drink {
     init(clr) {
         this.color = clr;
+    }
+
+    spill() {
+        super.spill();
+        this.steep();
     }
 
     steep() {
@@ -102,3 +113,5 @@ var t = Tea("green");
 print t.color;
 
 t.steep();
+
+t.spill();
