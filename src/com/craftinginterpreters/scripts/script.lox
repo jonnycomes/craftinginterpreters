@@ -93,4 +93,4 @@ class Tea {
     }
 }
 
-print Tea;
+print Tea();
