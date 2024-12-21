@@ -93,4 +93,8 @@ class Tea {
     }
 }
 
-print Tea();
+var t = Tea();
+
+t.color = "black";
+
+print t.color;
