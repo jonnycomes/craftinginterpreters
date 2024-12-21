@@ -88,14 +88,16 @@ print count();
 */
 
 class Tea {
+    init(clr) {
+        this.color = clr;
+    }
+
     steep() {
-        print "smells nice!";
+        print "smells nice and " + this.color + "!";
     }
 }
 
-var t = Tea();
-
-t.color = "black";
+var t = Tea("green");
 
 print t.color;
 
