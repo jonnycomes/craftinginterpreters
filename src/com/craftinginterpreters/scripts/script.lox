@@ -63,6 +63,7 @@ fun greet(first, last) {
 
 // greet("Jonny", "Comes");
 
+/*
 fun fib(n) {
     if (n <= 1) return 1;
     return fib(n-1) + fib(n-2);
@@ -84,3 +85,12 @@ fun makeCounter() {
 var count = makeCounter();
 print count();
 print count();
+*/
+
+class Tea {
+    steep() {
+        return "smells nice";
+    }
+}
+
+print Tea;
