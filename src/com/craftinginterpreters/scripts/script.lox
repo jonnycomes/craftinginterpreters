@@ -89,7 +89,7 @@ print count();
 
 class Tea {
     steep() {
-        return "smells nice";
+        print "smells nice!";
     }
 }
 
@@ -98,3 +98,5 @@ var t = Tea();
 t.color = "black";
 
 print t.color;
+
+t.steep();
