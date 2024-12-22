@@ -11,7 +11,7 @@
             "request": "launch",
             "mainClass": "lox.Lox",
             "projectName": "craftinginterpreters_e667fece",
-            "args": "${cwd}/src/scripts/script.lox"
+            "args": "${cwd}/scripts/script.lox"
         },
         {
             "type": "java",
